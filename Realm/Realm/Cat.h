@@ -7,13 +7,10 @@
 //
 
 #import <Realm/Realm.h>
-@class User;
 
 @interface Cat : RLMObject
 
 @property (nonatomic, strong) NSString *catName;
 @property (nonatomic, assign) NSInteger catAge;
-
-@property (nonatomic, strong) User *user;
 
 @end

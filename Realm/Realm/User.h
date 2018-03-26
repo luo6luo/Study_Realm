@@ -8,6 +8,7 @@
 
 #import <Realm/Realm.h>
 @class Dog;
+@class Cat;
 
 RLM_ARRAY_TYPE(Dog)
 
@@ -17,8 +18,10 @@ RLM_ARRAY_TYPE(Dog)
 @property (nonatomic, strong) NSString *sex;
 @property (nonatomic, assign) NSInteger age;
 
+// 一对一关系，一个user对应一个cat
+@property Cat *cat;
 
-
-@property (nonatomic, strong) RLMArray<Dog *><Dog> *dogs;
+// 一对多关系，一个user对应多个dog
+@property RLMArray<Dog *><Dog> *dogs;
 
 @end

@@ -15,7 +15,9 @@
 @property (nonatomic, assign) NSInteger dogAge;
 @property (nonatomic, strong) NSString *dogColor;
 
-@property (nonatomic, strong) User *user;
-
+@property (readonly) RLMLinkingObjects *owners;
 
 @end
+
+// 宏协议，表示可以使用 RLMArray<> 类
+RLM_ARRAY_TYPE(Dog)
