@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		378B7029DF2E714DABECB466 /* libPods-Realm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD480CF43CFCE3EFB0100B7 /* libPods-Realm.a */; };
+		6F4C4C36206A1EE6009F2078 /* KSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C4C2F206A1EE5009F2078 /* KSClient.m */; };
+		6F4C4C37206A1EE6009F2078 /* KSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C4C32206A1EE5009F2078 /* KSRequest.m */; };
+		6F4C4C38206A1EE6009F2078 /* KSRequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C4C35206A1EE5009F2078 /* KSRequestUtil.m */; };
 		6FA7EBA92057968B006B5EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7EBA82057968B006B5EA7 /* AppDelegate.m */; };
 		6FA7EBAC2057968B006B5EA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7EBAB2057968B006B5EA7 /* ViewController.m */; };
 		6FA7EBAF2057968B006B5EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA7EBAD2057968B006B5EA7 /* Main.storyboard */; };
@@ -20,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F4C4C2E206A1EE5009F2078 /* KSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSClient.h; sourceTree = "<group>"; };
+		6F4C4C2F206A1EE5009F2078 /* KSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSClient.m; sourceTree = "<group>"; };
+		6F4C4C30206A1EE5009F2078 /* KSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNetwork.h; sourceTree = "<group>"; };
+		6F4C4C31206A1EE5009F2078 /* KSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRequest.h; sourceTree = "<group>"; };
+		6F4C4C32206A1EE5009F2078 /* KSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRequest.m; sourceTree = "<group>"; };
+		6F4C4C33206A1EE5009F2078 /* KSRequestDefinations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRequestDefinations.h; sourceTree = "<group>"; };
+		6F4C4C34206A1EE5009F2078 /* KSRequestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRequestUtil.h; sourceTree = "<group>"; };
+		6F4C4C35206A1EE5009F2078 /* KSRequestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRequestUtil.m; sourceTree = "<group>"; };
 		6FA7EBA42057968B006B5EA7 /* Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA7EBA72057968B006B5EA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FA7EBA82057968B006B5EA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4C4C2D206A1EE5009F2078 /* KSNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C4C2E206A1EE5009F2078 /* KSClient.h */,
+				6F4C4C2F206A1EE5009F2078 /* KSClient.m */,
+				6F4C4C30206A1EE5009F2078 /* KSNetwork.h */,
+				6F4C4C31206A1EE5009F2078 /* KSRequest.h */,
+				6F4C4C32206A1EE5009F2078 /* KSRequest.m */,
+				6F4C4C33206A1EE5009F2078 /* KSRequestDefinations.h */,
+				6F4C4C34206A1EE5009F2078 /* KSRequestUtil.h */,
+				6F4C4C35206A1EE5009F2078 /* KSRequestUtil.m */,
+			);
+			path = KSNetwork;
+			sourceTree = "<group>";
+		};
 		6FA7EB9B2057968B006B5EA7 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +100,7 @@
 		6FA7EBA62057968B006B5EA7 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				6F4C4C2D206A1EE5009F2078 /* KSNetwork */,
 				6FA7EBA72057968B006B5EA7 /* AppDelegate.h */,
 				6FA7EBA82057968B006B5EA7 /* AppDelegate.m */,
 				6FA7EBAA2057968B006B5EA7 /* ViewController.h */,
@@ -237,7 +264,10 @@
 				6FA7EBAC2057968B006B5EA7 /* ViewController.m in Sources */,
 				6FD1604F2060FB1100837052 /* Dog.m in Sources */,
 				6FA7EBB72057968B006B5EA7 /* main.m in Sources */,
+				6F4C4C37206A1EE6009F2078 /* KSRequest.m in Sources */,
+				6F4C4C38206A1EE6009F2078 /* KSRequestUtil.m in Sources */,
 				6FA7EBA92057968B006B5EA7 /* AppDelegate.m in Sources */,
+				6F4C4C36206A1EE6009F2078 /* KSClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
